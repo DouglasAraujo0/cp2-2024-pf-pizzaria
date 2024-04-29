@@ -2,11 +2,11 @@
 
 CP II - **Java Advanced** aplicado em 29/04/2024.
 
-| ![](documentos/fiap.jpg)                 | **Java Advanced** |
-|------------------------------------------|-------------------|
-| **ALUNO:**                               | **TURMA:** 2TDSPF |
-| **PROFESSOR:** Benefrancis do Nascimento | 29/04/2024        |
-| **CP II**                                | ****              |
+| ![](documentos/fiap.jpg)                                           | **Java Advanced** |
+|--------------------------------------------------------------------|-------------------|
+| **ALUNO: Douglas Magalhães de Araújo e Gustavo Arguello Bertacci** | **TURMA:** 2TDSPF |
+| **PROFESSOR:** Benefrancis do Nascimento                           | 29/04/2024        |
+| **CP II**                                                          | ****              |
 
 # Sumário
 

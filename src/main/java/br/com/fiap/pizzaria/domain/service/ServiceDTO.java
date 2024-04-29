@@ -10,7 +10,7 @@ import java.util.Collection;
  * @param <Request>   RequestDTO
  * @param <Response>> ResponseDTO
  */
-public interface ServiceDTO<Entity, Request, Response> {
+public interface    ServiceDTO<Entity, Request, Response> {
     /**
      * Busca todas as entidades
      *
