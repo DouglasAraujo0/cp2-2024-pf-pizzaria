@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:oracle:${DB_HOMOLOG_SERVER:thin:@oracle.fiap.com.br}:${DB_HOMOLOG_PORT:1521}:${DB_HOMOLOG_NAME:ORCL}
-    username: ${DB_HOMOLOG_USERNAME:rm552008}
-    password: ${DB_HOMOLOG_PASSWORD:fiap23}
+    username: ${DB_HOMOLOG_USERNAME:XXXXXXX}
+    password: ${DB_HOMOLOG_PASSWORD:XXXXXXX}
   jpa:
     hibernate:
       ddl-auto: create

@@ -29,6 +29,28 @@ public class Pizzaria {
     @Column(name = "NM_PIZZARIA")
     private String nome;
 
+    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinTable(
+            name = "TB_CARDAPIO",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "PIZZARIA",
+                            referencedColumnName = "ID_PIZZARIA",
+                            foreignKey = @ForeignKey(
+                                    name = "FK_PRODUTO_PIZZARIA"
+                            )
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "PRODUTO",
+                            referencedColumnName = "ID_PRODUTO",
+                            foreignKey = @ForeignKey(
+                                    name = "FK_PIZZARIA_PRODUTO"
+                            )
+                    )
+            }
+    )
     private Set<Produto> cardapio = new LinkedHashSet<>();
 
 }

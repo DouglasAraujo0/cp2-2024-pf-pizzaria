@@ -14,9 +14,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 
 @Entity
-@Table(name = "TB_OPCIONAL", uniqueConstraints = {
-
-})
+@Table(name = "TB_OPCIONAL")
 public class Opcional {
 
     @Id
@@ -31,7 +29,12 @@ public class Opcional {
     @Column(name = "PRECO_OPCIONAL")
     private BigDecimal preco;
 
-
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(
+            name = "SABOR",
+            referencedColumnName = "ID_SABOR",
+            foreignKey = @ForeignKey(name = "FK_SABOR_OPCIONAL")
+    )
     private Sabor sabor;
 
 }
